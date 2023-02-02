@@ -1,4 +1,4 @@
-.overlay {
+.overlay-card {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -8,10 +8,18 @@
     justify-content: center;
     top: 0;
     left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 300ms;
 
 }
 
-.overlay * {
+.openCard {
+    opacity: 1;
+    visibility: visible;
+    transition-duration: 300ms;
+}
+.overlay-card * {
     color: white;
 }
 
@@ -20,6 +28,15 @@
     background-color: #272A2F;
     padding: 49px 0 49px 70px;
     position: relative;
+}
+
+.closeBtn {
+    background-image: url(../Vector\ \(8\).png);
+    position: absolute;
+    width: 23.4px;
+    height: 23.4px;
+    left: 90%;
+    top: 50px;
 }
 
 h1 {
@@ -62,7 +79,7 @@ h1 {
 
 .textarea {
     background: #324B53;
-    width: 92%;
+    width: calc(90% - 5px);
     resize: none;
     border: none;
     height: 219px;
@@ -88,4 +105,10 @@ h1 {
 .card_button:hover {
     background-color:#19849B;
     border: none;
+}
+
+@media screen  and (max-width: 750px){
+    .card {
+        width: 450px;
+    }
 }
