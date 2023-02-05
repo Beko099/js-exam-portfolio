@@ -53,7 +53,7 @@ for (let i = 0; i<allImage.length; i++) {
   overlayImg.addEventListener('click', () => {
     overlayImg.classList.remove('openImg')
   })
-  allImage[i].setAttribute('alt', './Group 1.png')
+
   
   
 }
@@ -83,6 +83,7 @@ sendMessage.addEventListener('click', () => {
   user.name = inputText.value
   user.email = inputEmail.value
   user.message = textArea.value
+  console.log(user)
 })
 
 

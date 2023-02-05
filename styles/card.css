@@ -116,7 +116,7 @@ h1 {
         width: calc(28% - 1px);
     }
     .textarea {
-        width: calc(92% - 2px);
+        width: calc(92% - 5px);
     }
     
 }
