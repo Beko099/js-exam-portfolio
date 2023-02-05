@@ -110,5 +110,13 @@ h1 {
 @media screen  and (max-width: 750px){
     .card {
         width: 450px;
+        padding: 49px 0 49px 35px;
     }
+    .input_text {
+        width: calc(28% - 1px);
+    }
+    .textarea {
+        width: calc(92% - 2px);
+    }
+    
 }

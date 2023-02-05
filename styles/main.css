@@ -3,6 +3,7 @@ main{
     height: 180vh;
     background: #272A2F;
     padding: 51px 0 76px 140px;
+    
 }
 
 .info_img {
@@ -169,7 +170,7 @@ main{
     }
     main {
         padding-left: 30vh;
-        height: calc(166vh - 5px);
+        height: fit-content;
     }
 
     .text_profile {
